@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>설치 전문 CS Master 명함</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="삼성전자 가전 설치 전문 CS Master 명함 페이지" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="business-card" aria-label="명함">
+        <header class="card-top">
+          <div class="brand">
+            <div class="brand-logo" aria-hidden="true">SAMSUNG</div>
+            <div class="brand-sub">가전 설치 전문 CS Master</div>
+          </div>
+          <div class="appliance-hero" aria-hidden="true">
+            <span class="appliance-dot"></span>
+            <span class="appliance-dot"></span>
+            <span class="appliance-dot"></span>
+          </div>
+        </header>
+
+        <div class="card-body">
+          <div class="profile">
+            <div class="photo-frame">
+              <img id="profile-photo" src="assets/profile.jpg" alt="프로필 사진" onerror="this.parentElement.classList.add('no-photo');this.remove();" />
+            </div>
+            <div class="contact">
+              <h2 class="name" id="contact-name">심현광</h2>
+              <a class="phone" id="contact-phone" href="tel:010-8758-7325" data-plain="010-8758-7325">010-8758-7325</a>
+              <div class="contact-actions">
+                <button class="btn" id="btn-call" data-action="call">전화하기</button>
+                <button class="btn" id="btn-copy" data-action="copy">번호복사</button>
+                <button class="btn btn-primary" id="btn-save" data-action="save">연락처 저장</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="message">
+            <p>
+              <strong>고객님의 소중한 제품</strong><br />
+              정성스럽게 설치하였습니다.
+            </p>
+            <p class="sub">사용하시면서 불편하신 점은 없으신지요?</p>
+          </div>
+
+          <div class="survey">
+            <div class="survey-chip">오늘 설문조사가 카카오톡으로 발송될 예정입니다</div>
+            <div class="survey-meta">카톡 발신: 한국능률협회컨설팅(KMAC)</div>
+          </div>
+
+          <div class="score">
+            <div class="score-left">
+              <div class="thumb" aria-hidden="true">👍</div>
+              <div class="note">8~9점은 비추천으로 집계됩니다</div>
+            </div>
+            <div class="score-right">
+              <div class="score-title">
+                <strong>3개 항목</strong> <span class="divider">|</span> <strong>10점 추천</strong>
+              </div>
+              <div class="tags">
+                <span class="tag">서비스</span>
+                <span class="tag">기사</span>
+                <span class="tag">재구매</span>
+              </div>
+              <div class="score-caption">10점 항목이 있어요!</div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="card-bottom">
+          <div class="center-name">삼성전자 서서울 물류센터</div>
+          <a class="center-phone" href="tel:1577-3913">1577-3913</a>
+        </footer>
+      </section>
+
+      <nav class="links" aria-label="사용 안내 링크">
+        <h3 class="links-title">서비스 안내</h3>
+        <ul class="link-grid">
+          <li>
+            <a class="link-card" href="pages/smartthings.html">
+              <span class="icon" aria-hidden="true">📱</span>
+              <span class="text">
+                <strong>스마트싱스 사용법</strong>
+                <em>연결/자동화/모니터링 가이드</em>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="link-card" href="pages/appliances.html">
+              <span class="icon" aria-hidden="true">🧰</span>
+              <span class="text">
+                <strong>가전제품 사용방법</strong>
+                <em>필수 체크리스트와 노하우</em>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="link-card" href="pages/support.html">
+              <span class="icon" aria-hidden="true">🛎️</span>
+              <span class="text">
+                <strong>고객센터 접수방법</strong>
+                <em>전화/챗봇/원격 지원 안내</em>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
