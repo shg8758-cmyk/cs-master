@@ -45,6 +45,10 @@ function callNow() {
   window.location.href = `tel:${toDigitsOnly(CONTACT.phone)}`;
 }
 
+function sendSms() {
+  window.location.href = `sms:${toDigitsOnly(CONTACT.phone)}`;
+}
+
 function toast(message) {
   let el = document.getElementById('toast');
   if (!el) {
@@ -66,7 +70,7 @@ function toast(message) {
 function wireEvents() {
   const byId = (id) => document.getElementById(id);
   byId('btn-save')?.addEventListener('click', saveVCard);
-  byId('btn-copy')?.addEventListener('click', copyPhone);
+  byId('btn-sms')?.addEventListener('click', sendSms);
   byId('btn-call')?.addEventListener('click', callNow);
 }
 

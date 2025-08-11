@@ -22,7 +22,7 @@ body {
 .page {
   max-width: 960px;
   margin: 24px auto 56px;
-  padding: 0 16px;
+  padding: 0 16px 24px;
 }
 
 .business-card {
